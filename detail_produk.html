@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk SSD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #445154;
+        }
+
+        .container {
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            width: 80rem;
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+        }
+
+        .card img {
+            width: 270px;
+            margin-top: 4rem;
+        }
+
+        #produk_1 {
+            padding: 10px;
+            background-color: rgb(0, 132, 255);
+            border-radius: 10px;
+        }
+
+        #produk_2 {
+            padding: 10px;
+            font-family: sans-serif;
+        }
+
+        #produk_2 .harga {
+            color: red;
+        }
+
+        .button1 {
+            float: left;
+            margin-left: 1rem;
+        }
+
+        .button1 .Buy {
+            height: 2.5rem;
+            width: 8rem;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .button1 .Buy:hover {
+            background-color: #9c1e1c;
+            transition: 0.3s;
+        }
+
+        .button2 {
+            float: right;
+            margin-right: 1rem;
+        }
+
+        .button2 .Cart {
+            height: 2.5rem;
+            width: 8rem;
+            background-color: #1282e3;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .button2 .Cart:hover {
+            background-color: #1572a3;
+            transition: 0.3s;
+        }
+
+        .back {
+            background-color: #fff;
+            width: 20px;
+            margin: 1rem;
+            border-radius: 50%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: #445154;
+        }
+
+        /* [class^="card"] {
+            background-color: black;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <a href="produk.html">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+    <div class="container">
+        <div class="card" id="produk_1">
+            <a href="detail_produk.html">
+                <img src="produk.png" alt="">
+            </a>
+        </div>
+        <div class="card" id="produk_2">
+            <div class="product">
+                <h1>V-GeN SSD Portable</h1>
+            </div>
+            <div class="harga">
+                <h2>$99.99</h2>
+            </div>
+            <div class="deskripsi">
+                <p>
+                    SSD Portable VGen adalah jenis SSD (Solid State Drive) eksternal yang ditawarkan oleh VGen. SSD
+                    portabel ini biasanya memiliki kecepatan transfer data yang tinggi dan ukuran yang kompak, cocok
+                    untuk digunakan sebagai penyimpanan eksternal yang cepat dan mudah dibawa-bawa.
+                </p>
+                <p class="spek">
+                    – Interface: USB Type A + USB Type C
+                    <br>
+                    – Size : 512GB, 1TB, 2TB
+                    <br>
+                    – Form Factor: SSD SATA III Portable Devices
+                    <br>
+                    – Controller : ASMedia ASM235CM
+                    <br>
+                    – Read & Write Speed: Up to 550/500MB/S
+                    <br>
+                    – Dimension : 77 x 18 x 8 (mm)
+                    <br>
+                    – Weight: 26 gr
+                    <br>
+                    – Warranty : 5 years
+                </p>
+            </div>
+            <div class="button1">
+                <input type="submit" class="Buy" value="Buy Now">
+            </div>
+            <div class="button2">
+                <input type="submit" class="Cart" value="Add to Cart">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
